@@ -1,7 +1,7 @@
 import { connectionDB } from "../database/db.js";
 import bcrypt from "bcryptjs"
 import { v4 as uuid } from "uuid";
-import { useResolvedPath } from "react-router-dom";
+
 
 export async function signUp(req, res){
     const {email, name, password} = req.body
